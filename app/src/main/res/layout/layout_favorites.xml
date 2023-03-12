@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:navigationIcon="?homeAsUpIndicator"
+            android:title="@string/favorites" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/showShapeableImageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sw"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+                <TextView
+                    android:id="@+id/showNameTextView"
+                    style="@style/FavoriteTextViewStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Super Wings"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView"
+                    app:layout_constraintStart_toEndOf="@id/showShapeableImageView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <TextView
+                    android:id="@+id/showReleaseDateTextView"
+                    style="@style/FavoriteTextViewStyle"
+                    android:text="2009"
+                    app:layout_constraintBottom_toTopOf="@id/showRatingBar"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView"
+                    app:layout_constraintStart_toStartOf="@id/showNameTextView"
+                    app:layout_constraintTop_toBottomOf="@id/showNameTextView" />
+
+                <RatingBar
+                    android:id="@+id/showRatingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/showReleaseDateTextView"
+                    app:layout_constraintTop_toBottomOf="@id/showReleaseDateTextView" />
+
+                <ImageView
+                    android:id="@+id/favoriteIconImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_favorite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/showShapeableImageView2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tfop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+                <TextView
+                    android:id="@+id/showNameTextView2"
+                    style="@style/FavoriteTextViewStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="The Fairly Odd Parents"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView2"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView2"
+                    app:layout_constraintStart_toEndOf="@id/showShapeableImageView2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <TextView
+                    android:id="@+id/showReleaseDateTextView2"
+                    style="@style/FavoriteTextViewStyle"
+                    android:text="2016"
+                    app:layout_constraintBottom_toTopOf="@id/showRatingBar2"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView2"
+                    app:layout_constraintStart_toStartOf="@id/showNameTextView2"
+                    app:layout_constraintTop_toBottomOf="@id/showNameTextView2" />
+
+                <RatingBar
+                    android:id="@+id/showRatingBar2"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/showReleaseDateTextView2"
+                    app:layout_constraintTop_toBottomOf="@id/showReleaseDateTextView2" />
+
+                <ImageView
+                    android:id="@+id/favoriteIconImageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_favorite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/showShapeableImageView3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/sw"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+                <TextView
+                    android:id="@+id/showNameTextView3"
+                    style="@style/FavoriteTextViewStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Super Wings"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView3"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView3"
+                    app:layout_constraintStart_toEndOf="@id/showShapeableImageView3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <TextView
+                    android:id="@+id/showReleaseDateTextView3"
+                    style="@style/FavoriteTextViewStyle"
+                    android:text="2009"
+                    app:layout_constraintBottom_toTopOf="@id/showRatingBar3"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView3"
+                    app:layout_constraintStart_toStartOf="@id/showNameTextView3"
+                    app:layout_constraintTop_toBottomOf="@id/showNameTextView3" />
+
+                <RatingBar
+                    android:id="@+id/showRatingBar3"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/showReleaseDateTextView3"
+                    app:layout_constraintTop_toBottomOf="@id/showReleaseDateTextView3" />
+
+                <ImageView
+                    android:id="@+id/favoriteIconImageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_favorite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/showShapeableImageView4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/conan"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+                <TextView
+                    android:id="@+id/showNameTextView4"
+                    style="@style/FavoriteTextViewStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="Conan"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView4"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView4"
+                    app:layout_constraintStart_toEndOf="@id/showShapeableImageView4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <TextView
+                    android:id="@+id/showReleaseDateTextView4"
+                    style="@style/FavoriteTextViewStyle"
+                    android:text="2001"
+                    app:layout_constraintBottom_toTopOf="@id/showRatingBar4"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView4"
+                    app:layout_constraintStart_toStartOf="@id/showNameTextView4"
+                    app:layout_constraintTop_toBottomOf="@id/showNameTextView4" />
+
+                <RatingBar
+                    android:id="@+id/showRatingBar4"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/showReleaseDateTextView4"
+                    app:layout_constraintTop_toBottomOf="@id/showReleaseDateTextView4" />
+
+                <ImageView
+                    android:id="@+id/favoriteIconImageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_favorite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/showShapeableImageView5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/matb"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+                <TextView
+                    android:id="@+id/showNameTextView5"
+                    style="@style/FavoriteTextViewStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="25dp"
+                    android:text="Masha and the Bear"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView5"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView5"
+                    app:layout_constraintStart_toEndOf="@id/showShapeableImageView5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <TextView
+                    android:id="@+id/showReleaseDateTextView5"
+                    style="@style/FavoriteTextViewStyle"
+                    android:text="2005"
+                    app:layout_constraintBottom_toTopOf="@id/showRatingBar5"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView5"
+                    app:layout_constraintStart_toStartOf="@id/showNameTextView5"
+                    app:layout_constraintTop_toBottomOf="@id/showNameTextView5" />
+
+                <RatingBar
+                    android:id="@+id/showRatingBar5"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/showReleaseDateTextView5"
+                    app:layout_constraintTop_toBottomOf="@id/showReleaseDateTextView5" />
+
+                <ImageView
+                    android:id="@+id/favoriteIconImageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_favorite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/showShapeableImageView6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/thomas"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+                <TextView
+                    android:id="@+id/showNameTextView6"
+                    style="@style/FavoriteTextViewStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="26dp"
+                    android:text="Thomas &amp; Friends"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView6"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView6"
+                    app:layout_constraintStart_toEndOf="@id/showShapeableImageView6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <TextView
+                    android:id="@+id/showReleaseDateTextView6"
+                    style="@style/FavoriteTextViewStyle"
+                    android:text="2015"
+                    app:layout_constraintBottom_toTopOf="@id/showRatingBar6"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView6"
+                    app:layout_constraintStart_toStartOf="@id/showNameTextView6"
+                    app:layout_constraintTop_toBottomOf="@id/showNameTextView6" />
+
+                <RatingBar
+                    android:id="@+id/showRatingBar6"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/showReleaseDateTextView6"
+                    app:layout_constraintTop_toBottomOf="@id/showReleaseDateTextView6" />
+
+                <ImageView
+                    android:id="@+id/favoriteIconImageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_favorite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/showShapeableImageView7"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/mlp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+
+                <TextView
+                    android:id="@+id/showNameTextView7"
+                    style="@style/FavoriteTextViewStyle"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="27dp"
+                    android:text="My Little Pony"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView7"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView7"
+                    app:layout_constraintStart_toEndOf="@id/showShapeableImageView7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <TextView
+                    android:id="@+id/showReleaseDateTextView7"
+                    style="@style/FavoriteTextViewStyle"
+                    android:text="2008"
+                    app:layout_constraintBottom_toTopOf="@id/showRatingBar7"
+                    app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView7"
+                    app:layout_constraintStart_toStartOf="@id/showNameTextView7"
+                    app:layout_constraintTop_toBottomOf="@id/showNameTextView7" />
+
+                <RatingBar
+                    android:id="@+id/showRatingBar7"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/showReleaseDateTextView7"
+                    app:layout_constraintTop_toBottomOf="@id/showReleaseDateTextView7" />
+
+                <ImageView
+                    android:id="@+id/favoriteIconImageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_favorite"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="#EB9F4A"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textAlignment="center"
+            app:drawableTopCompat="@drawable/round_home_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Favorites"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:drawableTopCompat="@drawable/baseline_favorite_selected_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:textAlignment="center"
+            app:drawableTopCompat="@drawable/baseline_person_24" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
