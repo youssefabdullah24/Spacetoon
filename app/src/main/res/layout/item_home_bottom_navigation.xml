@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BottomNavigationLayoutStyle"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:showIn="@layout/layout_home">
+
+    <TextView
+        style="@style/NavigationItemStyle"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:drawableTopCompat="@drawable/round_home_selected_24" />
+
+    <TextView
+        style="@style/NavigationItemStyle"
+        android:text="Favorites"
+        app:drawableTopCompat="@drawable/baseline_favorite_24" />
+
+    <TextView
+        style="@style/NavigationItemStyle"
+        android:text="Profile"
+        app:drawableTopCompat="@drawable/baseline_person_24" />
+</LinearLayout>

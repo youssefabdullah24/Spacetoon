@@ -15,78 +15,48 @@
 
     <EditText
         android:id="@+id/firstNameEt"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text_background"
         android:hint="First Name"
         android:inputType="textPersonName"
-        android:paddingStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spacetoonLogoIv" />
+        app:layout_constraintTop_toBottomOf="@id/spacetoonLogoIv"
+        style="@style/RegisterEditTextStyle" />
 
     <EditText
         android:id="@+id/lastNameEt"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text_background"
         android:hint="Last Name"
         android:inputType="textPersonName"
-        android:paddingStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstNameEt" />
+        app:layout_constraintTop_toBottomOf="@id/firstNameEt"
+        style="@style/RegisterEditTextStyle" />
 
     <EditText
         android:id="@+id/emailEt"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text_background"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:paddingStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lastNameEt" />
+        app:layout_constraintTop_toBottomOf="@id/lastNameEt"
+        style="@style/RegisterEditTextStyle" />
 
     <EditText
         android:id="@+id/passwordEt"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text_background"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emailEt" />
+        app:layout_constraintTop_toBottomOf="@id/emailEt"
+        style="@style/RegisterEditTextStyle" />
 
     <EditText
         android:id="@+id/confirmPasswordEt"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text_background"
         android:hint="Confirm Password"
         android:inputType="textPassword"
-        android:paddingStart="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordEt" />
+        app:layout_constraintTop_toBottomOf="@id/passwordEt"
+        style="@style/RegisterEditTextStyle" />
 
     <Button
         android:id="@+id/signInBtn"

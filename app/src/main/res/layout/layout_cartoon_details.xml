@@ -8,7 +8,6 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -89,19 +88,11 @@
             android:layout_height="0dp"
             android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/season_background"
-                android:orientation="horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/SeasonLayoutStyle">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/seasonImageView1"
-                    android:layout_width="96dp"
-                    android:layout_height="94dp"
+                    style="@style/CartoonDetailsImageStyle"
                     android:src="@drawable/conan"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -109,39 +100,25 @@
                     app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    style="@style/SeasonTextViewStyle"
                     android:text="Season 1"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seasonImageView1"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    style="@style/SeasonNextIconStyle"
                     android:src="@drawable/baseline_arrow_forward_ios_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/season_background"
-                android:orientation="horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/SeasonLayoutStyle">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/seasonImageView2"
-                    android:layout_width="96dp"
-                    android:layout_height="94dp"
+                    style="@style/CartoonDetailsImageStyle"
                     android:src="@drawable/conan"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -149,20 +126,14 @@
                     app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    style="@style/SeasonTextViewStyle"
                     android:text="Season 2"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seasonImageView2"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    style="@style/SeasonNextIconStyle"
                     android:src="@drawable/baseline_arrow_forward_ios_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -170,19 +141,11 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/season_background"
-                android:orientation="horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/SeasonLayoutStyle">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/seasonImageView3"
-                    android:layout_width="96dp"
-                    android:layout_height="94dp"
+                    style="@style/CartoonDetailsImageStyle"
                     android:src="@drawable/conan"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -190,20 +153,14 @@
                     app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    style="@style/SeasonTextViewStyle"
                     android:text="Season 3"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seasonImageView3"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    style="@style/SeasonNextIconStyle"
                     android:src="@drawable/baseline_arrow_forward_ios_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -211,19 +168,12 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/season_background"
-                android:orientation="horizontal">
+                style="@style/SeasonLayoutStyle"
+                android:layout_marginBottom="16dp">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/seasonImageView4"
-                    android:layout_width="96dp"
-                    android:layout_height="94dp"
+                    style="@style/CartoonDetailsImageStyle"
                     android:src="@drawable/conan"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -231,20 +181,14 @@
                     app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    style="@style/SeasonTextViewStyle"
                     android:text="Season 4"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seasonImageView4"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
+                    style="@style/SeasonNextIconStyle"
                     android:src="@drawable/baseline_arrow_forward_ios_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

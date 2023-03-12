@@ -12,7 +12,135 @@
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">1</item>
     </style>
+
     <style name="RoundedButton" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/button_background</item>
     </style>
+
+    <style name="SliderStyle">
+        <item name="android:layout_width">333dp</item>
+        <item name="android:layout_height">192dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="CategoryTextViewStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CategorySeeAllStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="CategoryItemStyle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">140dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="CategoryLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:weightSum">1</item>
+    </style>
+
+    <style name="BottomNavigationLayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">#EB9F4A</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:weightSum">3</item>
+    </style>
+
+    <style name="NavigationItemStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="FavoriteImageStyle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="FavoriteTitleTextViewStyle" parent="FavoriteTextViewStyle">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SeasonLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/season_background</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CartoonDetailsImageStyle">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">94dp</item>
+    </style>
+
+    <style name="SeasonTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SeasonNextIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="LoginEditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+
+    <style name="PlanetImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">187dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="RegisterEditTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:paddingStart">16dp</item>
+    </style>
+
 </resources>

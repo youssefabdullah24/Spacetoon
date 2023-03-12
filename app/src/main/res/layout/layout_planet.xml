@@ -8,8 +8,7 @@
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:layout_height="wrap_content">
 
         <Toolbar
             android:layout_width="match_parent"
@@ -40,80 +39,48 @@
             android:verticalSpacing="10dp">
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="wrap_content"
-                android:layout_height="187dp"
-                android:layout_columnWeight="1"
                 android:paddingEnd="8dp"
-                android:paddingBottom="4dp"
-                android:scaleType="fitXY"
                 android:src="@drawable/action2"
-                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                style="@style/PlanetImageStyle" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="wrap_content"
-                android:layout_height="187dp"
-                android:layout_columnWeight="1"
-                android:paddingBottom="4dp"
-                android:scaleType="fitXY"
                 android:src="@drawable/action1"
-                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                style="@style/PlanetImageStyle" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="wrap_content"
-                android:layout_height="187dp"
-                android:layout_columnWeight="1"
                 android:paddingEnd="8dp"
-                android:paddingBottom="4dp"
-                android:scaleType="fitXY"
                 android:src="@drawable/action3"
-                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                style="@style/PlanetImageStyle" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="wrap_content"
-                android:layout_height="187dp"
-                android:layout_columnWeight="1"
-                android:paddingBottom="4dp"
-                android:scaleType="fitXY"
                 android:src="@drawable/action2"
-                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                style="@style/PlanetImageStyle" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="wrap_content"
-                android:layout_height="187dp"
-                android:layout_columnWeight="1"
                 android:paddingEnd="8dp"
-                android:paddingBottom="4dp"
-                android:scaleType="fitXY"
                 android:src="@drawable/action1"
-                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                style="@style/PlanetImageStyle" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="wrap_content"
-                android:layout_height="187dp"
-                android:layout_columnWeight="1"
-                android:paddingBottom="4dp"
-                android:scaleType="fitXY"
                 android:src="@drawable/action3"
-                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                style="@style/PlanetImageStyle" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="wrap_content"
-                android:layout_height="187dp"
-                android:layout_columnWeight="1"
                 android:paddingEnd="8dp"
-                android:paddingBottom="4dp"
-                android:scaleType="fitXY"
                 android:src="@drawable/action2"
-                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                style="@style/PlanetImageStyle" />
 
             <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="wrap_content"
-                android:layout_height="187dp"
-                android:layout_columnWeight="1"
-                android:paddingBottom="4dp"
-                android:scaleType="fitXY"
                 android:src="@drawable/action1"
-                app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView"
+                style="@style/PlanetImageStyle" />
         </GridLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

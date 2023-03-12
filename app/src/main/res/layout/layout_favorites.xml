@@ -8,7 +8,6 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -40,22 +39,16 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
                     android:src="@drawable/sw"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView"
+                    style="@style/FavoriteImageStyle" />
 
                 <TextView
                     android:id="@+id/showNameTextView"
-                    style="@style/FavoriteTextViewStyle"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="24dp"
+                    style="@style/FavoriteTitleTextViewStyle"
                     android:text="Super Wings"
-                    android:textColor="@color/black"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView"
                     app:layout_constraintStart_toEndOf="@id/showShapeableImageView"
@@ -101,22 +94,16 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView2"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
                     android:src="@drawable/tfop"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView"
+                    style="@style/FavoriteImageStyle" />
 
                 <TextView
                     android:id="@+id/showNameTextView2"
-                    style="@style/FavoriteTextViewStyle"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="24dp"
+                    style="@style/FavoriteTitleTextViewStyle"
                     android:text="The Fairly Odd Parents"
-                    android:textColor="@color/black"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView2"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView2"
                     app:layout_constraintStart_toEndOf="@id/showShapeableImageView2"
@@ -161,22 +148,16 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView3"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
                     android:src="@drawable/sw"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView"
+                    style="@style/FavoriteImageStyle" />
 
                 <TextView
                     android:id="@+id/showNameTextView3"
-                    style="@style/FavoriteTextViewStyle"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="24dp"
+                    style="@style/FavoriteTitleTextViewStyle"
                     android:text="Super Wings"
-                    android:textColor="@color/black"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView3"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView3"
                     app:layout_constraintStart_toEndOf="@id/showShapeableImageView3"
@@ -222,22 +203,16 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView4"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
                     android:src="@drawable/conan"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView"
+                    style="@style/FavoriteImageStyle" />
 
                 <TextView
                     android:id="@+id/showNameTextView4"
-                    style="@style/FavoriteTextViewStyle"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="24dp"
+                    style="@style/FavoriteTitleTextViewStyle"
                     android:text="Conan"
-                    android:textColor="@color/black"
-                    android:textSize="12sp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView4"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView4"
                     app:layout_constraintStart_toEndOf="@id/showShapeableImageView4"
@@ -283,12 +258,11 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView5"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
                     android:src="@drawable/matb"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView"
+                    style="@style/FavoriteImageStyle" />
 
                 <TextView
                     android:id="@+id/showNameTextView5"
@@ -344,12 +318,11 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView6"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
                     android:src="@drawable/thomas"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView"
+                    style="@style/FavoriteImageStyle" />
 
                 <TextView
                     android:id="@+id/showNameTextView6"
@@ -405,12 +378,11 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView7"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
                     android:src="@drawable/mlp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView"
+                    style="@style/FavoriteImageStyle" />
 
                 <TextView
                     android:id="@+id/showNameTextView7"
@@ -460,41 +432,5 @@
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:background="#EB9F4A"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:weightSum="3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Home"
-            android:textAlignment="center"
-            app:drawableTopCompat="@drawable/round_home_24" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Favorites"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:drawableTopCompat="@drawable/baseline_favorite_selected_24" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Profile"
-            android:textAlignment="center"
-            app:drawableTopCompat="@drawable/baseline_person_24" />
-    </LinearLayout>
+    <include layout="@layout/item_favorites_bottom_navigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>
