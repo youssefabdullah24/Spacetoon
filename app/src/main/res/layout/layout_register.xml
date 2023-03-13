@@ -8,6 +8,7 @@
         android:id="@+id/spacetoonLogoIv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/app_logo"
         android:src="@drawable/spacetoon_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -15,48 +16,48 @@
 
     <EditText
         android:id="@+id/firstNameEt"
-        android:hint="First Name"
+        style="@style/RegisterEditTextStyle"
+        android:hint="@string/first_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spacetoonLogoIv"
-        style="@style/RegisterEditTextStyle" />
+        app:layout_constraintTop_toBottomOf="@id/spacetoonLogoIv" />
 
     <EditText
         android:id="@+id/lastNameEt"
-        android:hint="Last Name"
+        style="@style/RegisterEditTextStyle"
+        android:hint="@string/last_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstNameEt"
-        style="@style/RegisterEditTextStyle" />
+        app:layout_constraintTop_toBottomOf="@id/firstNameEt" />
 
     <EditText
         android:id="@+id/emailEt"
-        android:hint="Email"
+        style="@style/RegisterEditTextStyle"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lastNameEt"
-        style="@style/RegisterEditTextStyle" />
+        app:layout_constraintTop_toBottomOf="@id/lastNameEt" />
 
     <EditText
         android:id="@+id/passwordEt"
-        android:hint="Password"
+        style="@style/RegisterEditTextStyle"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/emailEt"
-        style="@style/RegisterEditTextStyle" />
+        app:layout_constraintTop_toBottomOf="@id/emailEt" />
 
     <EditText
         android:id="@+id/confirmPasswordEt"
-        android:hint="Confirm Password"
+        style="@style/RegisterEditTextStyle"
+        android:hint="@string/confirm_password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordEt"
-        style="@style/RegisterEditTextStyle" />
+        app:layout_constraintTop_toBottomOf="@id/passwordEt" />
 
     <Button
         android:id="@+id/signInBtn"
@@ -64,7 +65,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
-        android:text="Register"
+        android:text="@string/register"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="@id/confirmPasswordEt"
         app:layout_constraintStart_toStartOf="@id/confirmPasswordEt"
@@ -75,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Or Register With"
+        android:text="@string/or_register_with"
         android:textColor="#B345392C"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@id/signInBtn"
@@ -87,6 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/login_with_facebook"
         android:src="@drawable/facebook_icon"
         app:layout_constraintEnd_toStartOf="@id/googleIv"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -98,6 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/login_with_google"
         android:src="@drawable/google_icon"
         app:layout_constraintEnd_toStartOf="@id/twitterIv"
         app:layout_constraintStart_toEndOf="@id/fbIv"
@@ -108,6 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/login_with_twitter"
         android:src="@drawable/twitter_icon"
         app:layout_constraintEnd_toEndOf="@id/signInOptionsTv"
         app:layout_constraintStart_toEndOf="@id/googleIv"
@@ -117,7 +121,7 @@
         android:id="@+id/noAccountTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account?"
+        android:text="@string/already_have_an_account"
         android:textColor="#B345392C"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -131,7 +135,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#EB9F4A"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

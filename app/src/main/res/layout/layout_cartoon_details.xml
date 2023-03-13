@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:navigationIcon="?homeAsUpIndicator"
-            android:title="Conan" />
+            android:title="@string/conan" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="TV Series Name"
+        android:text="@string/tv_series_name"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/mediaPlayerImageView"
@@ -49,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="18dp"
+        android:contentDescription="@string/share"
         android:src="@drawable/share"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mediaPlayerImageView" />
@@ -59,6 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="12dp"
+        android:contentDescription="@string/add_to_favorites"
         android:src="@drawable/favorite"
         app:layout_constraintEnd_toStartOf="@id/shareImageView"
         app:layout_constraintTop_toBottomOf="@id/mediaPlayerImageView" />
@@ -101,13 +103,14 @@
 
                 <TextView
                     style="@style/SeasonTextViewStyle"
-                    android:text="Season 1"
+                    android:text="@string/season_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seasonImageView1"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     style="@style/SeasonNextIconStyle"
+                    android:contentDescription="@string/next"
                     android:src="@drawable/baseline_arrow_forward_ios_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -127,13 +130,14 @@
 
                 <TextView
                     style="@style/SeasonTextViewStyle"
-                    android:text="Season 2"
+                    android:text="@string/season_2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seasonImageView2"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     style="@style/SeasonNextIconStyle"
+                    android:contentDescription="@string/next"
                     android:src="@drawable/baseline_arrow_forward_ios_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -154,13 +158,14 @@
 
                 <TextView
                     style="@style/SeasonTextViewStyle"
-                    android:text="Season 3"
+                    android:text="@string/season_3"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seasonImageView3"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     style="@style/SeasonNextIconStyle"
+                    android:contentDescription="@string/next"
                     android:src="@drawable/baseline_arrow_forward_ios_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -182,13 +187,14 @@
 
                 <TextView
                     style="@style/SeasonTextViewStyle"
-                    android:text="Season 4"
+                    android:text="@string/season_4"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@id/seasonImageView4"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     style="@style/SeasonNextIconStyle"
+                    android:contentDescription="@string/next"
                     android:src="@drawable/baseline_arrow_forward_ios_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

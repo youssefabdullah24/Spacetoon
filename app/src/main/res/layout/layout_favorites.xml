@@ -39,16 +39,16 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView"
+                    style="@style/FavoriteImageStyle"
                     android:src="@drawable/sw"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView"
-                    style="@style/FavoriteImageStyle" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
                     android:id="@+id/showNameTextView"
                     style="@style/FavoriteTitleTextViewStyle"
-                    android:text="Super Wings"
+                    android:text="@string/super_wings"
                     app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView"
                     app:layout_constraintStart_toEndOf="@id/showShapeableImageView"
@@ -59,7 +59,7 @@
                 <TextView
                     android:id="@+id/showReleaseDateTextView"
                     style="@style/FavoriteTextViewStyle"
-                    android:text="2009"
+                    android:text="@string/_2009"
                     app:layout_constraintBottom_toTopOf="@id/showRatingBar"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView"
                     app:layout_constraintStart_toStartOf="@id/showNameTextView"
@@ -79,6 +79,7 @@
                     android:id="@+id/favoriteIconImageView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/remove_from_favorites"
                     android:src="@drawable/icon_favorite"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -94,16 +95,16 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView2"
+                    style="@style/FavoriteImageStyle"
                     android:src="@drawable/tfop"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView"
-                    style="@style/FavoriteImageStyle" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
                     android:id="@+id/showNameTextView2"
                     style="@style/FavoriteTitleTextViewStyle"
-                    android:text="The Fairly Odd Parents"
+                    android:text="@string/the_fairly_odd_parents"
                     app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView2"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView2"
                     app:layout_constraintStart_toEndOf="@id/showShapeableImageView2"
@@ -114,7 +115,7 @@
                 <TextView
                     android:id="@+id/showReleaseDateTextView2"
                     style="@style/FavoriteTextViewStyle"
-                    android:text="2016"
+                    android:text="@string/_2016"
                     app:layout_constraintBottom_toTopOf="@id/showRatingBar2"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView2"
                     app:layout_constraintStart_toStartOf="@id/showNameTextView2"
@@ -134,6 +135,7 @@
                     android:id="@+id/favoriteIconImageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/remove_from_favorites"
                     android:src="@drawable/icon_favorite"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -148,16 +150,16 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView3"
+                    style="@style/FavoriteImageStyle"
                     android:src="@drawable/sw"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView"
-                    style="@style/FavoriteImageStyle" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
                     android:id="@+id/showNameTextView3"
                     style="@style/FavoriteTitleTextViewStyle"
-                    android:text="Super Wings"
+                    android:text="@string/super_wings"
                     app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView3"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView3"
                     app:layout_constraintStart_toEndOf="@id/showShapeableImageView3"
@@ -168,7 +170,7 @@
                 <TextView
                     android:id="@+id/showReleaseDateTextView3"
                     style="@style/FavoriteTextViewStyle"
-                    android:text="2009"
+                    android:text="@string/_2009"
                     app:layout_constraintBottom_toTopOf="@id/showRatingBar3"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView3"
                     app:layout_constraintStart_toStartOf="@id/showNameTextView3"
@@ -188,6 +190,7 @@
                     android:id="@+id/favoriteIconImageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/remove_from_favorites"
                     android:src="@drawable/icon_favorite"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -203,16 +206,16 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView4"
+                    style="@style/FavoriteImageStyle"
                     android:src="@drawable/conan"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView"
-                    style="@style/FavoriteImageStyle" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
                     android:id="@+id/showNameTextView4"
                     style="@style/FavoriteTitleTextViewStyle"
-                    android:text="Conan"
+                    android:text="@string/conan"
                     app:layout_constraintBottom_toTopOf="@id/showReleaseDateTextView4"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView4"
                     app:layout_constraintStart_toEndOf="@id/showShapeableImageView4"
@@ -223,7 +226,7 @@
                 <TextView
                     android:id="@+id/showReleaseDateTextView4"
                     style="@style/FavoriteTextViewStyle"
-                    android:text="2001"
+                    android:text="@string/_2001"
                     app:layout_constraintBottom_toTopOf="@id/showRatingBar4"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView4"
                     app:layout_constraintStart_toStartOf="@id/showNameTextView4"
@@ -243,6 +246,7 @@
                     android:id="@+id/favoriteIconImageView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/remove_from_favorites"
                     android:src="@drawable/icon_favorite"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -258,18 +262,18 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView5"
+                    style="@style/FavoriteImageStyle"
                     android:src="@drawable/matb"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView"
-                    style="@style/FavoriteImageStyle" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
                     android:id="@+id/showNameTextView5"
                     style="@style/FavoriteTextViewStyle"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="25dp"
-                    android:text="Masha and the Bear"
+                    android:text="@string/masha_and_the_bear"
                     android:textColor="@color/black"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -283,7 +287,7 @@
                 <TextView
                     android:id="@+id/showReleaseDateTextView5"
                     style="@style/FavoriteTextViewStyle"
-                    android:text="2005"
+                    android:text="@string/_2005"
                     app:layout_constraintBottom_toTopOf="@id/showRatingBar5"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView5"
                     app:layout_constraintStart_toStartOf="@id/showNameTextView5"
@@ -303,6 +307,7 @@
                     android:id="@+id/favoriteIconImageView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/remove_from_favorites"
                     android:src="@drawable/icon_favorite"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -318,18 +323,18 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView6"
+                    style="@style/FavoriteImageStyle"
                     android:src="@drawable/thomas"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView"
-                    style="@style/FavoriteImageStyle" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
                     android:id="@+id/showNameTextView6"
                     style="@style/FavoriteTextViewStyle"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="26dp"
-                    android:text="Thomas &amp; Friends"
+                    android:text="@string/thomas_amp_friends"
                     android:textColor="@color/black"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -343,7 +348,7 @@
                 <TextView
                     android:id="@+id/showReleaseDateTextView6"
                     style="@style/FavoriteTextViewStyle"
-                    android:text="2015"
+                    android:text="@string/_2015"
                     app:layout_constraintBottom_toTopOf="@id/showRatingBar6"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView6"
                     app:layout_constraintStart_toStartOf="@id/showNameTextView6"
@@ -363,6 +368,7 @@
                     android:id="@+id/favoriteIconImageView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/remove_from_favorites"
                     android:src="@drawable/icon_favorite"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -378,18 +384,18 @@
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/showShapeableImageView7"
+                    style="@style/FavoriteImageStyle"
                     android:src="@drawable/mlp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:shapeAppearanceOverlay="@style/RoundedImageView"
-                    style="@style/FavoriteImageStyle" />
+                    app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
                 <TextView
                     android:id="@+id/showNameTextView7"
                     style="@style/FavoriteTextViewStyle"
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="27dp"
-                    android:text="My Little Pony"
+                    android:text="@string/mlp"
                     android:textColor="@color/black"
                     android:textSize="12sp"
                     android:textStyle="bold"
@@ -403,7 +409,7 @@
                 <TextView
                     android:id="@+id/showReleaseDateTextView7"
                     style="@style/FavoriteTextViewStyle"
-                    android:text="2008"
+                    android:text="@string/_2008"
                     app:layout_constraintBottom_toTopOf="@id/showRatingBar7"
                     app:layout_constraintEnd_toStartOf="@id/favoriteIconImageView7"
                     app:layout_constraintStart_toStartOf="@id/showNameTextView7"
@@ -423,6 +429,7 @@
                     android:id="@+id/favoriteIconImageView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/remove_from_favorites"
                     android:src="@drawable/icon_favorite"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

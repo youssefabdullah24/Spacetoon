@@ -14,12 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:navigationIcon="?homeAsUpIndicator"
-            android:title="Action">
+            android:title="@string/action">
 
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="end"
+                android:contentDescription="@string/search"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/baseline_search_24" />
         </Toolbar>
@@ -39,48 +40,48 @@
             android:verticalSpacing="10dp">
 
             <com.google.android.material.imageview.ShapeableImageView
+                style="@style/PlanetImageStyle"
                 android:paddingEnd="8dp"
                 android:src="@drawable/action2"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                style="@style/PlanetImageStyle" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                style="@style/PlanetImageStyle"
                 android:src="@drawable/action1"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                style="@style/PlanetImageStyle" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                style="@style/PlanetImageStyle"
                 android:paddingEnd="8dp"
                 android:src="@drawable/action3"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                style="@style/PlanetImageStyle" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                style="@style/PlanetImageStyle"
                 android:src="@drawable/action2"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                style="@style/PlanetImageStyle" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                style="@style/PlanetImageStyle"
                 android:paddingEnd="8dp"
                 android:src="@drawable/action1"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                style="@style/PlanetImageStyle" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                style="@style/PlanetImageStyle"
                 android:src="@drawable/action3"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                style="@style/PlanetImageStyle" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                style="@style/PlanetImageStyle"
                 android:paddingEnd="8dp"
                 android:src="@drawable/action2"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                style="@style/PlanetImageStyle" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                style="@style/PlanetImageStyle"
                 android:src="@drawable/action1"
-                app:shapeAppearanceOverlay="@style/RoundedImageView"
-                style="@style/PlanetImageStyle" />
+                app:shapeAppearanceOverlay="@style/RoundedImageView" />
         </GridLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
